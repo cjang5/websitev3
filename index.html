@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <!-- Special thanks -->
+    <!-- Stephen Michael Vrkljan for finding some excruciatingly painful grammatical errors that I otherwise would not have caught. I couldn't have done this without him and no doubt he will play a major role in me getting hired by some of the top tech companies out there today. :^) 9/23/15 10:45 PM Central Time -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Website 2.0</title>
+		<meta name="description" content="Page Preloading Effect: Re-creating the effect seen on fontface.ninja" />
+		<meta name="keywords" content="page loading, effect, initial, logo, sliding, web design, css animation, transform" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/primary.css" />
+        <link rel="stylesheet" type="text/css" href="css/timeline.css" />
+
+        <!-- for the project modals -->
+        <link rel="stylesheet" type="text/css" href="css/modals.css" />
+
+        <!-- for the buttons -->
+        <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+
+		<script src="js/modernizr.custom.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+        <!-- Font-awesome 4.5.0 -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!-- Slick css -->
+        <link rel="stylesheet" type="text/css" href="css/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css">
+
+        <!-- Fonts -->
+        <!-- Roboto Slab -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <!-- Montserrat -->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <!-- Open Sans -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <!-- Lobster -->
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+	</head>
+	<body class="demo-1">
+		<div id="ip-container" class="ip-container">
+			<!-- initial header -->
+			<header class="ip-header">
+				<h1 class="ip-logo">
+                    <a href="index.html" class="svg">
+				    <svg class="ip-inner" width="100%" height="100%" viewBox="0 0 300 160" preserveAspectRatio="xMidYMin meet" aria-labelledby="logo_title">
+			            <path fill="#FF0000" d="M188.5,209.8c6.3,6.3,12.3,12.3,18.5,18.4c-4.8,4.5-10,8.7-15.8,12.2c-6.4,3.9-13,7.1-20.3,9
+				c-7.4,2-15,3-22.7,3c-7.4,0-14.6-0.9-21.6-2.9c-9.6-2.7-18.2-7.3-26.2-13.3c-4.3-3.3-8.3-6.8-12-10.7
+				c-11.7-12.3-19.5-26.6-22-43.6c-2-13.7-1-27.1,3.5-40.3c3.4-9.8,8.6-18.6,15.2-26.5c1.3-1.6,2.6-3.2,3.7-4.6
+				c6.3,6.3,12.5,12.5,18.8,18.8c-10.6,11.7-15.7,26-14.9,42.1c0.6,11.4,5.1,21.5,12.2,30.4c5,6.2,10.9,11.5,17.8,15.3
+				c6.9,3.8,14.3,6.3,22.3,6.9c7.9,0.5,15.6-0.2,23.2-2.5C176.2,219.3,182.5,214.7,188.5,209.8z"/>
+			            <path fill="#FF0000" d="M190.1,127.2c-0.3-0.4-0.6-0.9-1-1.2c-12.5-12.6-25.1-25.1-37.7-37.7c-0.4-0.4-0.9-0.8-1.4-1.3
+				c-12.8,12.8-25.5,25.6-38.1,38.3c-6.4-6.4-12.6-12.6-18.5-18.5c19.2-19.2,38.6-38.6,58.1-58.1c0.2,0.2,0.6,0.5,1.1,1
+				c18.9,18.9,37.8,37.8,56.7,56.7c0.4,0.4,0.8,0.9,1.2,1.4c-5.9,6-11.8,11.8-17.7,17.8C192,126.3,191.5,127.4,190.1,127.2z"/>
+			            <path fill="#FF0000" d="M190.1,127.2c4-4,8.1-7.9,12.1-11.9c2.2-2.2,4.4-4.5,6.6-6.7c0.5-0.5,0.9-0.7,1.6-0.7
+				c5.1,5.2,9.8,10.7,13.5,17c5.1,8.4,8.8,17.4,10.3,27.1c1.1,7,1.4,13.9,0.8,21c-0.7,8.2-2.5,16.2-5.7,23.7
+				c-3.6,8.8-8.6,16.7-15,23.8c-1.2,1.3-2,2.9-3.3,3.7c-6.1-6.1-12.1-12.1-18.4-18.4c0-0.2,0.5-0.8,1-1.4
+				c6.7-7.1,10.8-15.7,12.5-25.2c3.1-17.3-0.3-33.1-11.5-47C193.1,130.4,191.4,129,190.1,127.2z"/>
+			            <path fill="#FF0000" d="M113.8,163.8c1.3-0.7,2.5-1.1,3.8-1.3c7,13.2,17.4,21,32.7,21c15.2-0.1,25.6-7.9,32.5-21
+				c0.6,0.3,1.2,0.5,1.7,0.8c0.6,0.2,1.1,0.5,1.7,0.7c-2.6,9.7-15.3,21.7-30.3,23.7C136.6,190.2,119.9,178.8,113.8,163.8z"/>
+			            <path fill="#FF0000" d="M135.2,150.5c-0.3,2.1-1.5,3.4-3.9,3.8c-2-0.2-3.4-1.4-3.8-3.8c0.2-2.1,1.4-3.5,3.8-3.8
+				C133.4,146.8,134.8,148,135.2,150.5z"/>
+			            <path fill="#FF0000" d="M173,150.5c-0.3,2.2-1.6,3.6-3.9,3.8c-2.2-0.3-3.5-1.6-3.8-3.8c0.3-2.2,1.6-3.6,3.9-3.8
+				C171.4,146.9,172.7,148.2,173,150.5z"/>
+					</svg>
+                    </a>
+				</h1>
+				<div class="ip-loader">
+					<svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+						<path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+						<path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+					</svg>
+				</div> <!-- ip-loader -->
+			</header>
+
+			<!-- main content -->
+			<div class="ip-main">
+				<h2>Hi, I'm Chris.</h2>
+
+                <h3 id="header3">
+                    <span class="default">I love</span>
+                    <span class="programming">programming</span>
+                    <span class="default">and</span>
+                    <span class="design">design.</span>
+                </h3>
+			</div> <!-- ip-main -->
+
+            <div class="pseudo-nav-wrapper">
+                <div class="pseudo-nav" id="pnav">
+                    <div class="nav-bg">
+                        <div class="pn-buttons">
+                            <a href="#about" class="button button--naira orange1">
+                                <i class="fa fa-graduation-cap button__icon"></i>
+                                <span>Student</span>
+                            </a>
+
+                            <a href="#developer" class="button button--naira green-gray">
+                                <i class="fa fa-code button__icon"></i>
+                                <span>Developer</span>
+                            </a>
+
+                            <a href="#designer" class="button button--naira orange1">
+                                <i class="fa fa-laptop button__icon"></i>
+                                <span>Designer</span>
+                            </a>
+                        </div> <!-- pn-buttons -->
+                    </div> <!-- nav-bg -->
+                </div> <!-- pseudo-nav -->
+            </div> <!-- pseudo-nav-wrapper -->
+
+		</div> <!-- /container -->
+
+        <!-- About me -->
+
+        <section class="About" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h1>WHO I AM</h1>
+                        <hr>
+                    </div> <!-- col-lg-8 -->
+                </div> <!-- row -->
+
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <p>I am a second generation Korean-American currently studying Computer Science at the University of Illinois in Urbana-Champaign. I LOVE learning, which has led me to find excitement for technology, design, and entrepreneurship. In addition, things that I'm really passionate about are outreach and making learning more globally accessible.</p>
+                        <span><i class="fa fa-pencil fa-2x"></i></span>
+                        <p id="p2">If you want to get in contact with me, the best way would be to shoot me an email, and I'll try to get back to you as promptly as possible. If you want to see my credentials, feel free to check out my (hopefully most recent) résumé!</p>
+                        <hr>
+                    </div> <!-- col-lg-10 -->
+                </div> <!-- row -->
+
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3">
+                        <div id="contact-buttons">
+                            <a class="button button--naira orange1" href="img/resume.pdf" target="_blank">
+                                <i class="fa fa-file-text button__icon"></i>
+                                <span>Résumé</span>
+                            </a>
+                        </div> <!-- contact-buttons -->
+                    </div> <!-- col-lg-6 -->
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </section> <!-- About -->
+
+        <!-- Developer section to showcase projects -->
+
+        <section class="Developer" id="developer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1>RECENT HACKS</h1>
+                        <hr>
+                    </div> <!-- col-lg-12 -->
+                </div> <!-- row -->
+
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <!-- Project Modals -->
+                        <ul class="grid cs-style-3">
+                            <!-- Modal 1 -->
+                            <li>
+                                <!-- Popup dialog -->
+                                <div class="md-modal md-effect-1" id="modal-1">
+                                    <div class="md-content">
+                                        <h3>ODYSSEY</h3>
+                                        <div>
+                                            <p><em>An Android app aimed at creating an easier way to share photos between friends going on vacations and road trips together.</em></p>
+                                            <p class="modal-para">A hackathon project for Spartahacks 2015, I worked on the camera side and getting a custom UI instead of the typical Android camera UI for the app. It was my first big undertaking in Android development and proved chalenging, but I managed to finally get it to work, albeit a bit too late into our 36 hour hackathon.</p>
+
+                                            <div class="md-learn">
+                                                <a href="https://github.com/timothyong/Spartahack" target="_blank">Learn more</a>
+                                            </div> <!-- md-learn -->
+
+                                        </div> <!-- wrapping div -->
+                                    </div> <!-- md-content -->
+                                </div> <!-- md-modal -->
+                                <!-- Modal image -->
+                                <figure>
+                                    <img src="img/modals/strike-modal.png" alt="img04">
+                                    <figcaption>
+                                        <h3>Strike!</h3>
+                                        <!-- Button to popup dialog -->
+                                        <a href="https://github.com/cjang5/bowling-jackpot" target="_blank" class="md-trigger">Take a look</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                            <!-- Modal 2 -->
+                            <li>
+                                <!-- Popup dialog -->
+                                <div class="md-modal md-effect-1" id="modal-2">
+                                    <div class="md-content">
+                                        <h3>PERKT.io</h3>
+                                        <div>
+                                            <p><em>A security system built around a facial recognition algorithm that allows for passwords based on your facial profile, not text.</em></p>
+                                            <p>The product of my very first hackathon, HackIllinois 2015, me and my team of 4 decided to create a facial recognition security system with our very own algorithm written from scratch. We used linear algebra practices to create a pretty accurate algorithm at around a 90% success rate. We also created a small <a href="http://perkt.io" target="_blank"><strong>page</strong></a> demonstrating how our project works.</p>
+
+                                            <div class="md-learn">
+                                                <a href="https://github.com/timothyong/hackillinois" target="_blank">Learn more</a>
+                                            </div> <!-- md-learn -->
+
+                                        </div> <!-- wrapper div -->
+                                    </div> <!-- md-content -->
+                                </div> <!-- md-modal -->
+                                <figure>
+                                    <img src="img/modals/perkt-modal.png" alt="img01">
+                                    <figcaption>
+                                        <h3>Perkt.io</h3>
+                                        <a href="https://github.com/timothyong/hackillinois" target="_blank" class="md-trigger2" data-modal="modal-2">Take a look</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                            <!-- Modal 3 -->
+                            <li>
+                                <div class="md-modal md-effect-1" id="modal-3">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div>
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="md-close">Close me!</button>
+                                        </div> <!-- wrapper div -->
+                                    </div> <!-- md-content -->
+                                </div> <!-- md-modal -->
+                                <figure>
+                                    <img src="img/modals/mosaic-modal.png" alt="img02">
+                                    <figcaption>
+                                        <h3>Mosaic-o-Matic</h3>
+                                        <a href="https://github.com/cjang5/mosaic-o-matic" target="_blank"class="md-trigger" data-modal="modal-3">Take a look</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                        </ul>
+                    </div> <!-- col-lg-12 -->
+                </div> <!-- row -->
+
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3">
+                        <div id="all-projects">
+                            <a href="https://github.com/cjang5" class="button button--naira green-gray" target="_blank">
+                                <i class="fa fa-flask button__icon"></i>
+                                <span>All Projects</span>
+                            </a>
+                        </div> <!-- all-projects -->
+                    </div> <!-- col-lg-6 -->
+                </div> <!-- row -->
+            </div> <!-- container -->
+
+            <!-- Overlay element for modals -->
+            <div class="md-overlay"></div>
+
+        </section> <!-- Developer -->
+
+        <!-- Designer section -->
+        <section class="Designer" id="designer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1>SOME DESIGNS</h1>
+                        <hr>
+                    </div> <!-- col-lg-12 -->
+                </div> <!-- row -->
+
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <div class="carousel">
+                            <div class="image0"><img src="img/carousel/image0.jpg"></div>
+                            <div class="image1"><img src="img/carousel/image1.jpg"></div>
+                            <div class="image2"><img src="img/carousel/image2.jpg"></div>
+                            <div class="image3"><img src="img/carousel/image3.jpg"></div>
+                            <div class="image4"><img src="img/carousel/image4.jpg"></div>
+                            <div class="image5"><img src="img/carousel/image5.jpg"></div>
+                            <div class="image6"><img src="img/carousel/image6.jpg"></div>
+                        </div> <!-- carousel -->
+                    </div> <!-- col-lg-8 -->
+                </div> <!-- row -->
+                <!-- Portfolio button, not needed atm
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3">
+                        <div id="all-projects">
+                            <a class="button button--naira green-gray">
+                                <i class="fa fa-paint-brush button__icon"></i>
+                                <span>Portfolio</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>-->
+            </div> <!-- container -->
+        </section> <!-- Designer -->
+
+        <section class="Footer" id="footer">
+
+            <div class="container">
+                <div class="col-lg-12 text-center">
+                    <h2>Find me on:</h2>
+                    <hr>
+                    <a href="https://github.com/cjang5" class="btn-social btn-outline" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/cjang5" class="btn-social btn-outline" target='_blank'>
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://medium.com/@cjang5" class="btn-social btn-outline" target="_blank">
+                        <i class="fa fa-medium"></i>
+                    </a>
+                    <a href="https://twitter.com/jangerino" class="btn-social btn-outline" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://dribbble.com/chrismanggg" class="btn-social btn-outline" target="_blank">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <hr>
+                </div> <!-- col-lg-12 -->
+
+                <div class="col-lg-12 branding">
+                    <div class="brand">
+                        <span>Made with </span>
+                        <span class="heart"><i class="fa fa-heart heart"></i></span>
+                        <span> in New Jersey</span>
+                    </div> <!-- brand -->
+                </div> <!-- col-lg-12 -->
+            </div> <!-- container -->
+        </section> <!-- Footer -->
+
+        <!--
+        <div class="version">VERSION 23a</div> -->
+
+        <!-- Load in js files after to go faster -->
+        <script src="js/modal.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+        <!-- Slick -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+        <script type="text/javascript" src="js/carousel.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/pathLoader.js"></script>
+		<script src="js/main.js"></script>
+        <script src="js/nav.js"></script>
+	</body>
+</html>
